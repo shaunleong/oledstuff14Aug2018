@@ -52,11 +52,13 @@ namespace OLED {
 				oled->printf("%s\n", screen[i]);
 			}
 		}
+		oled->display();
 	}
     
 	//%
 	void splash() {
 		oled->splash();
+		oled->display();
 	}
 	
     //%
