@@ -57,24 +57,15 @@ namespace OLED {
 	
 	
 	/**
-     * displays a loading screen
+     * initialises the i2c OLED display
+     * @param H height (in pixels)
+     * @param W width (in pixels)
      */
-    //% blockId=oled_loading_screen
-    //% block="show loading screen"
+    //% blockId=oled_loadingScreen
+    //% block="show loading screen with height %H|width %W"
     //% icon="\uf1ec" 
     //% shim=OLED::loadingScreen
-    export function loadingScreen(): void {
-        return;
-    }
-	
-	/**
-     * splashes
-     */
-    //% blockId=oled_splash
-    //% block="splash"
-    //% icon="\uf1ec" 
-    //% shim=OLED::splash
-    export function splash(): void {
+    export function loadingScreen(H: number, W: number): void {
         return;
     }
 }
