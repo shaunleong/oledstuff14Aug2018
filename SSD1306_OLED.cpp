@@ -39,6 +39,7 @@ namespace OLED {
 				screen[i][j] = '#';
 			}
 		}
+		/*
 		for (int j = 0; j < W; j++) {
 			for (int i = 0; i < H; i++) {
 				screen[i][j] = ' ';
@@ -50,6 +51,11 @@ namespace OLED {
 			for (int i = 0; i < H; i++) {
 				oled->printf("%s\n", screen[i]);
 			}
+		}
+		*/
+		oled->clearDisplay();
+		for (int i = 0; i < H; i++) {
+			oled->printf("%s\n", screen[i]);
 		}
 		oled->display();
 	}
