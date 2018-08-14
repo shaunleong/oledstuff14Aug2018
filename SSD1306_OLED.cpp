@@ -30,6 +30,28 @@ namespace OLED {
 		oled->printf("AA %s\n", text->data);
 		oled->display();
     }
+	
+	//%
+	void loadingScreen() {
+		int H=4, W=10;
+		char screen[H][W];
+		for (int i = 0; i < H; i++) {
+			for (int j = 0; j < W; j++) {
+				screen[i][j] = '#';
+			}
+		}
+		for (int j = 0; j < W; j++) {
+			for (int i = 0; i < H; i++) {
+				screen[i][j] = ' ';
+			}
+			if (j>0) for (int i = 0; i < H; i++) {
+				screen[i][j-1] = '#';
+			}
+			for (int i = 0; i < H; i++) {
+				oled->printf("%s\n", screen[i]);
+			}
+		}
+	}
     
     //%
     void showNumber (int number) {

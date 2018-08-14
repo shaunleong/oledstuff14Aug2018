@@ -54,4 +54,16 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
+	
+	
+	/**
+     * displays a loading screen
+     */
+    //% blockId=oled_loading_screen
+    //% block="show loading screen"
+    //% icon="\uf1ec" 
+    //% shim=OLED::loadingScreen
+    export function loadingScreen(): void {
+        return;
+    }
 }
