@@ -33,7 +33,7 @@ namespace OLED {
 	
 	//%
 	void loadingScreen() {
-		int H=4, W=10;
+		int H=10, W=20;
 		char screen[H][W];
 		for (int i = 0; i < H; i++) {
 			for (int j = 0; j < W; j++) {
