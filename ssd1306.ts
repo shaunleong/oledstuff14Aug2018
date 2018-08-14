@@ -37,7 +37,7 @@ namespace OLED {
     //% icon="\uf1ec"
     //% shim=OLED::showString
     export function showString(text: string): void {
-        console.log("display: " + text);
+        console.log("display: $$ " + text);
         return;
     }
 
