@@ -66,4 +66,15 @@ namespace OLED {
     export function loadingScreen(): void {
         return;
     }
+	
+	/**
+     * splashes
+     */
+    //% blockId=oled_splash
+    //% block="splash"
+    //% icon="\uf1ec" 
+    //% shim=OLED::splash
+    export function splash(): void {
+        return;
+    }
 }

@@ -47,12 +47,18 @@ namespace OLED {
 			if (j>0) for (int i = 0; i < H; i++) {
 				screen[i][j-1] = '#';
 			}
+			oled->clearDisplay();
 			for (int i = 0; i < H; i++) {
 				oled->printf("%s\n", screen[i]);
 			}
 		}
 	}
     
+	//%
+	void splash() {
+		oled->splash();
+	}
+	
     //%
     void showNumber (int number) {
 		oled->printf("%d\n", number);
