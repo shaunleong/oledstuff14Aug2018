@@ -277,3 +277,9 @@ void Adafruit_SSD1306::splash(void)
 	textcolor = WHITE;
 	textbgcolor = BLACK;
 }
+
+void Adafruit_SSD1306::testing(void)
+{
+	std::fill(buffer.begin(),buffer.end(),255);
+	
+}

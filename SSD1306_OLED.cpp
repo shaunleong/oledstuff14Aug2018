@@ -62,7 +62,8 @@ namespace OLED {
     
 	//%
 	void splash() {
-		oled->splash();
+		//oled->splash();
+		oled->testing();
 		oled->display();
 	}
 	
