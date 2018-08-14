@@ -73,6 +73,8 @@ public:
 	void display();
 	/// Fill the buffer with the AdaFruit splash screen.
 	virtual void splash();
+	
+	virtual void testing();
     
 protected:
 	virtual void sendDisplayBuffer() = 0;
