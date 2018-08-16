@@ -277,16 +277,3 @@ void Adafruit_SSD1306::splash(void)
 	textcolor = WHITE;
 	textbgcolor = BLACK;
 }
-
-void Adafruit_SSD1306::testing(void)
-{
-	std::fill(buffer.begin(),buffer.end(),255);
-	int L = std::distance(buffer.begin(),buffer.end());
-	auto it1 = buffer.begin();
-	std::advance(it1,L/3);
-	auto it2 = buffer.begin();
-	std::advance(it2,L/3*2);
-	std::fill(buffer.begin(),it1,0);
-	std::fill(it1,it2,255);
-	std::fill(it2,buffer.end(),0);
-}
